@@ -1,0 +1,112 @@
+<html >
+<head>
+ <title> Williamslea | tag</title>
+	<link rel="stylesheet" href="bower_components/bootstrap/css/bootstrap.css"/>
+     <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+	<link rel="stylesheet" href="styles.css"/>
+	
+	
+    
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries --> 
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]--> 
+</head>
+<body>
+      <div id="wrapper">
+        <!-- Navigation -->
+        <nav class="navbar navbar-fixed-top" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Williamslea | tag</a>
+            </div>
+            <!-- Top Menu Items -->
+            <ul class="nav navbar-right top-nav brand-menu">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle"> Help </a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Syed Azher <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- /.navbar-collapse -->
+			<!-- Dynamic navigation menu bar later setup
+			<ul class="nav" data-ng-cloak="">
+        <li ng-repeat ="tab in tabs"data-ui-sref-active="active" > <a data-ui-sref="home" >Home</a>  </li>
+        <li  ng-class="{active:$state.includes('regionRule')}"> 
+            <a data-ui-sref="tab.state" >Region Rule</a> </li>
+          </ul>-->
+			
+			<div class="menu-nav" id="">
+		  <ul class="nav navbar-nav navbar-right">
+			<li><a ui-sref="dashboard">Dashboard <span class="select-border"></span></a></li>
+			<li><a ui-sref="user">Users <span class="select-border"></span></a></li>
+			<li><a href="#">Items <span class="select-border"></span></a></li>
+			<li><a href="#">Attributes <span class="select-border"></span></a></li>
+			<li><a href="#">Divisions <span class="select-border"></span></a></li>
+			<li><a href="#">Stores <span class="select-border"></span></a></li>
+			<li><a href="#">Promos <span class="select-border"></span></a></li>
+		  </ul>
+		</div><!-- /.navbar-collapse -->
+        </nav>
+		
+        <div id="page-wrapper">
+            <div class="container-fluid">
+                <!-- Page Heading -->
+                <div class="row">
+                    <div class="col-lg-12">
+						<div class="page-header">
+							<div class="wlt-page-header">
+								<h2> Dashboard </h2>
+							</div>
+							<div class="wlt-search-panel">
+								<form class="navbar-form" role="search">
+									<div class="form-group">
+									    <input type="text" class="form-control" placeholder="Search">
+									</div>
+								</form>
+								<button class="btn btn-default" value="Create Promo">Create Promo</button>
+							</div>
+						<div>
+						
+						<div class="wlt-grid-container">
+						
+			                 <div ui-view></div>
+                  						
+						</div>
+                    </div>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </div>
+        <!-- /#page-wrapper -->
+		
+		<div class="footer">
+			<span class="footer-left">Copyright © Williams Lea 2016</span>
+			<span class="footer-right">Privacy   |  Terms & Conditions</span>
+		</div>
+    </div>
+    <!-- /#wrapper -->
+
+   
+	
+    <script type="text/javascript" data-main="bootstrapper.js" src="bower_components/requirejs/require.js"></script>
+</body>
+</html>
+
